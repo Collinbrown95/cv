@@ -1,0 +1,19 @@
+- name: "What Drives Bitcoin Fees? Using SegWit to Assess Bitcoin’s Long-Run Sustainability"
+  date: 2021-01-21
+  journal: <a href="https://www.risk.net/journal-of-financial-market-infrastructures" target="_blank">Journal of Financial Market Infrastructures</a>
+  order: 1
+  description: |
+    Can Bitcoin remain tamper-proof in the long run?
+    We use block-level data from the Bitcoin blockchain to estimate the impact of congestion and the US dollar price on fee rates.
+  url: https://www.risk.net/journal-of-financial-market-infrastructures/7914886/what-drives-bitcoin-fees-using-segwit-to-assess-bitcoins-long-run-sustainability
+  link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4013550"
+- name: "2025 Survey of CPI Production Systems"
+  date: 2025-04-30
+  audience: <a href='https://unece.org/info/Statistics/events/394156' target="_blank">UNECE's 2025 Meeting of the Group of Experts on Consumer Price Indices</a>
+  order: 2
+  description: |
+    Delivered a <a href='https://un-task-team-for-scanner-data.github.io/production-systems-survey/pdf/Survey-of-CPI-Production-Systems.pdf' target="_blank">report</a>
+    and <a href='https://un-task-team-for-scanner-data.github.io/production-systems-survey/presentation/presentation.html#/title-slide' target="_blank">presentation</a>
+    summarizing the results of a Survey of National Statistics Offices for 70 countries on CPI system modernization on behalf of the United Nations Economic Commission for
+    Europe's (UNECE) <a href='https://unstats.un.org/bigdata/' target="_blank">Committee of Experts on Big Data and Data Science for Official Statistics</a>.
+  link: "https://un-task-team-for-scanner-data.github.io/production-systems-survey/report-site/intro.html"

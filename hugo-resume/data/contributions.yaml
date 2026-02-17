@@ -1,0 +1,8 @@
+- project: Doccano
+  url: https://github.com/doccano/doccano/pull/976
+  description: |
+    Implemented internationalization on the user interface, and also implemented
+    miscellaneous small feature requests and bug fixes.
+- project: Lingui-JS
+  url: https://github.com/lingui/js-lingui/pull/1752
+  description: I contributed an example of setting up an Rspack project with Lingui-JS.

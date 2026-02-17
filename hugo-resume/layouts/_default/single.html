@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <article>
+        <h1>{{ .Title }}</h1>
+        <p><strong>{{ .Params.company }}</strong> ({{ .Params.date_range }})</p>
+        <div class="content">
+            {{ .Content }}
+        </div>
+        <a href="/">Back to Resume</a>
+    </article>
+{{ end }}

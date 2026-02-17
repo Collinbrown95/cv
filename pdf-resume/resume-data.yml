@@ -1,0 +1,9 @@
+name: "Alex Smith"
+email: "alex@example.com"
+jobs:
+  - title: "Senior Developer"
+    company: "Tech Corp"
+    date: "2021 - Present"
+    details:
+      - "Led the migration of 50+ microservices to Kubernetes."
+      - "Optimized database queries, reducing latency by 40%."

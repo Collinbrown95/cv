@@ -1,0 +1,85 @@
+- category: Data Architecture and Data Engineering
+  items:
+    - name: Governance
+      img: https://img.icons8.com/?size=100&id=ohRoVjIY4Y6m&format=png&color=000000
+      level: 50
+    - name: Azure Synapse
+      img: https://img.icons8.com/?size=100&id=G0lMpD5KxltR&format=png&color=000000
+      level: 50
+    - name: Databricks
+      img: https://az-icons.com/export/icons/d180faa9ddc77cb9e841ff02998e5e21.svg
+      level: 70
+    - name: Data Modelling
+      img: https://img.icons8.com/?size=100&id=9jbTZpdDmAB0&format=png&color=000000
+      level: 65
+    - name: Data Security
+      img: https://img.icons8.com/?size=100&id=11341&format=png&color=000000
+      level: 60
+    - name: System Design
+      img: https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/external-system-industrial-manufacturing-inipagistudio-mixed-inipagistudio.png
+      level: 70
+    - name: Test Automation
+      img: https://img.icons8.com/pulsar-gradient/48/pass.png
+      level: 70
+- category: "Programming Languages"
+  items:
+    - name: "Python"
+      img: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
+      level: 90 # percentage for a progress bar
+    - name: "Java"
+      img: "https://img.icons8.com/?size=100&id=5OD485koNIrb&format=png&color=000000"
+      level: 60
+    - name: "Golang"
+      img: "https://img.icons8.com/?size=100&id=44442&format=png&color=000000"
+      level: 40 # percentage for a progress bar
+    - name: "JavaScript"
+      img: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000"
+      level: 40
+    - name: "R"
+      img: https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000
+      level: 30
+    - name: SQL
+      img: https://img.icons8.com/?size=100&id=13406&format=png&color=000000
+      level: 65
+- category: "Cloud, Infrastructure, and DevOps"
+  items:
+    - name: "Azure"
+      img: https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000
+      level: 75
+    - name: "GCP"
+      img: https://img.icons8.com/?size=100&id=20774&format=png&color=000000
+      level: 30
+    - name: Cloud Networking
+      img: https://img.icons8.com/fluency/48/router.png
+      level: 65
+    - name: "Kubernetes"
+      img: https://img.icons8.com/?size=100&id=cvzmaEA4kC0o&format=png&color=000000
+      level: 65
+    - name: GitLab
+      img: https://img.icons8.com/?size=100&id=34886&format=png&color=000000
+      level: 80
+    - name: GitHub
+      img: https://img.icons8.com/?size=100&id=12599&format=png&color=000000
+      level: 60
+    - name: Argo Workflows
+      img: https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg
+      level: 50
+- category: Soft Skills
+  items:
+    - name: Project Management
+      img: https://img.icons8.com/?size=100&id=104233&format=png&color=000000
+      level: 50
+    - name: Technical Communication
+      img: https://img.icons8.com/?size=100&id=W2lxGoDCNcSu&format=png&color=000000
+      level: 80
+    - name: Requirements Gathering
+      img: https://img.icons8.com/?size=100&id=gISnCt7xMvHp&format=png&color=000000
+      level: 60
+- category: Languages
+  items:
+    - name: English
+      img: https://img.icons8.com/?size=100&id=ShNNs7i8tXQF&format=png&color=000000
+      level: 100
+    - name: French
+      img: https://img.icons8.com/?size=100&id=5RtaKEr09Jy6&format=png&color=000000
+      level: 35

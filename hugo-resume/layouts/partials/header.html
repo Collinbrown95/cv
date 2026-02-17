@@ -1,0 +1,20 @@
+<header id="site-header">
+    <div class="header-top">        
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+
+    <img src="{{ .Site.Data.overview.profile_img }}" alt="Profile Picture" class="avatar">
+
+    <nav id="main-nav">
+        <ul>
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

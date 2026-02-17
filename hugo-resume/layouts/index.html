@@ -1,0 +1,144 @@
+{{ define "main" }}
+    <!-- 1. Overview Section (Pulls from content/_index.md) -->
+    <section id="about">
+        <div class="profile-header">
+            <!-- Circular Photo -->
+            <!-- <img src="{{ .Site.Data.overview.profile_img }}" alt="Profile Picture" class="avatar"> -->
+            
+            <!-- Name with Split Styling -->
+            <h1 class="name-display">
+                <span class="first-name">{{ .Site.Data.overview.first_name }}</span><span class="last-name"> {{ .Site.Data.overview.last_name }}</span>
+            </h1>
+
+            <!-- Title and Degrees -->
+            <div class="credentials">
+                <p class="job-title">{{ .Site.Data.overview.title }}</p>
+                <p class="degrees">{{ .Site.Data.overview.degrees }}</p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="social-links">
+                <a href="{{ .Site.Data.overview.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="{{ .Site.Data.overview.github }}" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="overview-content">
+            {{ .Content }}
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-overview">
+            <p>
+                These are the core skills I’ve developed and applied meaningfully in professional settings. 
+                For transparency, I indicate my <strong>recency and level of experience</strong> with each skill.
+            </p>
+        </div>
+
+        {{ range .Site.Data.skills }}
+        <div class="skill-category">
+            <h3>{{ .category }}</h3>
+            <div class="skill-grid">
+                {{ range (sort .items "level" "desc") }}
+                <div class="skill-item">
+                    <div class="skill-top-row">
+                        <img src="{{ .img }}" class="skill-icon" alt="{{ .name }} icon">
+                        <span class="skill-name">{{ .name }}</span>
+                    </div>
+                    
+                    <!-- Proficiency Level Bar now sits below -->
+                    <div class="skill-bar-container">
+                        <div class="skill-bar-fill" style="width: {{ .level }}%;"></div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        <p class="skills-attribution">
+            Icons provided by <a href="https://icons8.com" target="_blank" rel="noopener">Icons8</a>, <a href="https://devicon.dev/">DevIcon</a>, </a>and <a href="https://az-icons.com" target="_blank" rel="noopener">Azure Icons</a>
+        </p>
+    </section>
+    <!-- 2. Experience Section (Pulls from content/experience/*.md) -->
+    <section id="experience">
+        <h2>Work Experience</h2>
+        {{ range (where .Site.RegularPages "Section" "experience").ByDate.Reverse }}
+            <div class="exp-item">
+                <a href="{{ .RelPermalink }}">
+                    <h3>{{ .Title }}</h3>
+                </a>
+                <p><strong>{{ .Params.company }}</strong> | {{ .Params.date_range }}</p>
+                <p>{{ .Summary }}</p> <!-- Shows the first 70 words or text before -->
+                <a href="{{ .RelPermalink }}">More Detail &rarr;</a>
+            </div>
+        {{ end }}
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="edu-list">
+            {{ range (sort .Site.Data.education "dates" "desc") }}
+            <div class="edu-item">
+                <img src="{{ .img }}" class="edu-logo" alt="{{ .school }} logo">
+                <div class="edu-details">
+                    <h3>{{ .school }}</h3>
+                    <p class="edu-degree">{{ .degree }} in {{ .major }}</p>
+                    {{ if .minor }}
+                    <p class="edu-minor">{{ .minor }}</p>
+                    {{ end }}
+                    <span class="edu-dates">{{ .dates }}</span>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+
+    <section id="publications">
+        <h2>Publications</h2>
+        {{ range (sort .Site.Data.publications "order" "desc") }}
+            <div class="pub-item" style="margin-bottom: 1.5rem;">
+                <h3>
+                    <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+                </h3>
+                <p><strong>Published:</strong> {{ .date }}</p>
+                {{ if .journal }}
+                    <p><strong>Journal:</strong> {{ .journal | safeHTML}}</p>
+                {{ end }}
+
+                {{ if .audience }}
+                    <p><strong>Audience:</strong> {{ .audience | safeHTML }}</p>
+                {{ end }}
+                {{ if .description }}
+                    <p class="pub-description">{{ .description | safeHTML }}</p>
+                {{ end }}
+            </div>
+        {{ end }}
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <h2>Awards</h2>
+        <ul>
+        {{ range (sort .Site.Data.awards "year" "desc") }}
+            <li><strong>{{ .title }}</strong> - {{ .issuer }} ({{ .year }})</li>
+        {{ end }}
+        </ul>
+    </section>
+
+    <!-- Contributions Section -->
+    <section id="contributions">
+        <h2>Open Source Contributions</h2>
+        <ul>
+        {{ range .Site.Data.contributions }}
+            <li>
+                <a href="{{ .url }}">{{ .project }}</a>: {{ .description }}
+            </li>
+        {{ end }}
+        </ul>
+    </section>
+{{ end }}

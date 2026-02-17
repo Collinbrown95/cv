@@ -1,0 +1,38 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/#about"
+    weight = 10
+  [[menu.main]]
+    name = "Skills"
+    url = "/#skills"
+    weight = 15
+  [[menu.main]]
+    name = "Experience"
+    url = "/#experience"
+    weight = 20
+  [[menu.main]]
+    name = "Education"
+    url = "/#education"
+    weight = 30
+  [[menu.main]]
+    name = "Publications"
+    url = "/#publications"
+    weight = 40
+  [[menu.main]]
+    name = "Awards"
+    url = "/#awards"
+    weight = 50
+  [[menu.main]]
+    name = "Contributions"
+    url = "/#contributions"
+    weight = 60

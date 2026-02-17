@@ -1,0 +1,23 @@
+- school: "Georgia Institute of Technology"
+  img: https://brand.gatech.edu/sites/default/files/inline-images/GTVertical_RGB.png
+  degree: "Master of Science"
+  major: "Computer Science"
+  minor: Specialization in Artificial Intelligence
+  dates: "2024 - 2027 (expected)"
+- school: "Athabasca University"
+  img: https://au-store.ca/cdn/shop/files/ScreenShot2025-05-13at10.48.49AM.png?v=1747154935
+  degree: "Undergraduate Coursework"
+  major: "Computer Science"
+  dates: "2020 - 2023"
+- school: Queen's University
+  img: https://www.queensu.ca/brand-central/sites/bcwww/files/styles/column_card_image/public/2021-11/Queens-viguide-resources-logo-vertical-1200x589-2x.jpg?itok=H69uKSlB
+  degree: Master of Arts
+  major: Economics
+  minor: Concentration in Econometrics
+  dates: 2017 - 2018
+- school: McMaster University
+  img: https://brand.mcmaster.ca/app/uploads/2024/02/mcmaster-logo-2024-col-300x300.jpg
+  degree: Bachelor of Arts
+  major: Economics
+  minor: Minor in Mathematics and Statistics
+  dates: 2013 - 2017
