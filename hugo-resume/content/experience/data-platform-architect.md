@@ -27,7 +27,7 @@ In this role, I've primarily delivered on three main workstreams.
 - Reduced worst-case running time across all daily ingestion pipelines from around 90 minutes to around 20 minutes.
 
 <div style="text-align: center;">
-  <img src="/experience/data-platform-architect/data-platform-architect-ingestion.svg" 
+  <img src={{ "/experience/data-platform-architect/data-platform-architect-ingestion.svg" | relURL }} 
        alt="{{ .Text }}" 
        style="max-width: 100%; height: auto; display: inline-block;">
 </div>
@@ -42,7 +42,7 @@ In this role, I've primarily delivered on three main workstreams.
 
 
 <div style="text-align: center;">
-  <img src="/experience/data-platform-architect/data-platform-architect-platform.svg" 
+  <img src={{ "/experience/data-platform-architect/data-platform-architect-platform.svg" | relURL }}
        alt="{{ .Text }}" 
        style="max-width: 100%; height: auto; display: inline-block;">
 </div>

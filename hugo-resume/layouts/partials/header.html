@@ -8,7 +8,7 @@
         </button>
     </div>
 
-    <img src="{{ .Site.Data.overview.profile_img }}" alt="Profile Picture" class="avatar">
+    <img src="{{ .Site.Data.overview.profile_img | relURL }}" alt="Profile Picture" class="avatar">
 
     <nav id="main-nav">
         <ul>
