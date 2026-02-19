@@ -10,4 +10,4 @@ summary: "Led Proof-of-Concept projects in data analytics and machine learning, 
 
 - Quality-assured complex internal machine learning use cases to ensure they successfully met stated requirements and performance metrics.
 
-- Developed and maintained complex SQL queries stored procedures to enable ad-hoc Business Intelligence reporting about the Canadian Emergency Response Benefit (CERB).
+- Developed and maintained complex SQL queries and stored procedures to enable ad-hoc Business Intelligence reporting about the Canadian Emergency Response Benefit (CERB).
