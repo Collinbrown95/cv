@@ -35,6 +35,16 @@
   )
 }
 
+#let local-contact-no-link(img-path, content, url, clr: black) = {
+  grid(
+    columns: (12pt, auto),
+    column-gutter: 6pt,
+    align: horizon,
+    image(img-path, width: 10pt),
+    [#text[#content]]
+  )
+}
+
 
 // --- ABOUT SECTION ---
 #block(width: 100%)[
@@ -78,8 +88,8 @@
           
           
           // Contact info in Black
-          local-contact("img/phone-icon.png", phone, "tel:" + phone),
-          local-contact("img/mail-icon.png", email, "mailto:" + email),
+          local-contact-no-link("img/phone-icon.png", phone, "tel:" + phone),
+          local-contact-no-link("img/mail-icon.png", email, "mailto:" + email),
           
           // Socials in Brand Color
           local-contact("img/linkedin.png", "LinkedIn", overview.linkedin, clr: blue.darken(20%)),
@@ -152,14 +162,19 @@
     column-gutter: 6pt,
     align: top + left,
     // Small icon for the institution
-    image(icon-path, width: 14pt),
+    box(
+        clip: true,
+        radius: 50%,
+        stroke: 0.5pt + gray.lighten(50%),
+        image(icon-path, width: 15pt, height: 15pt)
+      ),
     stack(
       dir: ttb,
       spacing: 2pt,
       // School Name (Small & Bold)
-      text(weight: "bold", size: 9pt)[#school],
+      text(weight: "bold", size: 8pt)[#school],
       // Degree (Accent Color)
-      text(size: 8.5pt, fill: rgb("#2d5a27"), weight: "medium")[#degree],
+      text(size: 7pt, fill: rgb("#2d5a27"), weight: "medium")[#degree],
       // Supporting details (Very small & Gray)
       if details != "" { 
         text(size: 7.5pt, fill: gray.darken(40%), style: "italic")[#details] 
@@ -181,28 +196,28 @@
   edu-item(
     "img/gatech.png",
     "Georgia Tech",
-    "M.Sc. Computer Science",
+    "M.Sc. Candidate, Computer Science",
     details: "Specialization in AI"
   ),
   
   // Queen's
   edu-item(
-    "img/queens.jpg",
+    "img/queens.png",
     "Queen's University",
-    "M.A. Economics",
+    "M.A., Economics",
     details: "Specialization in Econometrics"
   ),
   
   // McMaster/Athabasca
   edu-item(
-    "img/mcmaster.jpg",
+    "img/mcmaster.png",
     "McMaster University",
-    "B.A. Economics",
+    "B.A., Economics",
     details: "Minor in Mathematics and Statistics"
   )
 )
 
 #v(1em)
-#text(size: 6pt, style: "italic", fill: gray)[
+#text(size: 5pt, style: "italic", fill: gray)[
   Icons provided by Icons8, DevIcon, and Azure Icons.
 ]
