@@ -17,7 +17,7 @@
   first_name: "Collin",
   last_name: "Brown",
   title: "Sr. Data Architect / Technical Advisor",
-  degrees: "M.Sc. Candidate Computer Science, M.A. Economics",
+  degrees: "M.Sc. Candidate, Computer Science • M.A. Economics",
   linkedin: "https://www.linkedin.com/in/collin-brown-499a4580/",
   github: "https://github.com/Collinbrown95",
   cv: "https://collinbrown95.github.io/resume/",

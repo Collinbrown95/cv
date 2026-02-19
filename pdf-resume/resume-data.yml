@@ -4,7 +4,7 @@ jobs:
   - title: Sr. Data Architect
     company: Statistics Canada
     date: 2024 - Present
-    details: Led the development and oversight of our division’s domain-specific data lake and medallion architecture, managing data ingestion, validation, and processing pipelines while serving as a technical advisor on data engineering practices.
+    details: Led the development and oversight of our division's domain-specific data lake and medallion architecture, managing data ingestion, validation, and processing pipelines while serving as a technical advisor on data engineering practices.
   - title: Sr. Platform Developer
     company: Statistics Canada
     date: 2022 - 2024

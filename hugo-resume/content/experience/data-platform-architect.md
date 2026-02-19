@@ -3,7 +3,7 @@ title: "Sr. Data Architect / Technical Advisor"
 company: "Consumer Prices Division - Statistics Canada"
 date_range: "2024 - Present"
 date: 4
-summary: "Lead the development and oversight of our division’s domain-specific data lake and medallion architecture, managing data ingestion, validation, and processing pipelines while serving as a technical advisor on data engineering practices."
+summary: "Lead the development and oversight of our division's domain-specific data lake and medallion architecture, managing data ingestion, validation, and processing pipelines while serving as a technical advisor on data engineering practices."
 ---
 
 The Consumer Prices Division (CPD) at Statistics Canada is responsible for producing the monthly Canadian Consumer Price Index (CPI) and related statistical products.
