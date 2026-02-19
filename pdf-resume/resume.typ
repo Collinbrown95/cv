@@ -1,4 +1,5 @@
 #import "@preview/dovenv:0.1.0": parse-env
+#import "@preview/fontawesome:0.6.0": *
 
 // Read and parse the .env file
 #let env = parse-env(read(".env"))
@@ -16,12 +17,24 @@
   first_name: "Collin",
   last_name: "Brown",
   title: "Sr. Data Architect / Technical Advisor",
-  degrees: "MSc Candidate Computer Science, MA Economics",
+  degrees: "M.Sc. Candidate Computer Science, M.A. Economics",
   linkedin: "https://www.linkedin.com/in/collin-brown-499a4580/",
   github: "https://github.com/Collinbrown95",
   cv: "https://collinbrown95.github.io/resume/",
   profile_img: "img/collin-profile-pic-1.png" // Ensure this file exists in your folder
 )
+
+// Helper function to keep icon and text aligned
+#let local-contact(img-path, content, url, clr: black) = {
+  grid(
+    columns: (12pt, auto),
+    column-gutter: 6pt,
+    align: horizon,
+    image(img-path, width: 10pt),
+    link(url)[#text(fill: clr)[#content]]
+  )
+}
+
 
 // --- ABOUT SECTION ---
 #block(width: 100%)[
@@ -29,13 +42,13 @@
     dir: ttb,
     spacing: 1.2em,
     
-    // Header Grid: Photo on left, Text on right
+    // Header Grid: Photo, Name/Title, and Contact Info
     grid(
-      columns: (80pt, 1fr),
-      gutter: 20pt,
-      align: horizon + left,
+      columns: (80pt, 1fr, auto), // Three distinct columns
+      column-gutter: 20pt,
+      align: horizon,            // Vertically center all three columns
       
-      // Circular Photo (Avatar)
+      // Column 1: Circular Photo
       box(
         clip: true,
         radius: 50%,
@@ -43,29 +56,37 @@
         image(overview.profile_img, width: 80pt, height: 80pt)
       ),
       
-      // Name, Title, and Socials
+      // Column 2: Name, Title, and Degrees
       stack(
         dir: ttb,
         spacing: 0.5em,
         
-        // Split Styling for Name
-        text(size: 26pt, weight: "bold")[
+        text(size: 24pt, weight: "bold")[
           #text(fill: black)[#overview.first_name]
           #text(fill: rgb("#2d5a27"))[ #overview.last_name]
         ],
-        
-        // Credentials
-        text(size: 12pt, weight: "medium", style: "italic")[#overview.title],
-        text(size: 10pt, fill: gray)[#overview.degrees],
-        
-        // Social Links (using text for simplicity, or FontAwesome icons)
-        text(size: 9pt, fill: blue.darken(20%))[
-          #link(overview.linkedin)[LinkedIn] | #link(overview.github)[GitHub] | #link(overview.cv)[CV] |
-        ],
-        text(size: 9pt, fill: black)[
-          #phone  #email
-        ]
-      )
+        text(size: 11pt, weight: "medium", style: "italic")[#overview.title],
+        text(size: 9pt, fill: gray.darken(20%))[#overview.degrees],
+      ),
+      
+      // Column 3: Contact Info & Socials (Right Aligned)
+      align(right + horizon)[
+        #set text(size: 9pt)
+        #stack(
+          dir: ttb,
+          spacing: 0.6em,
+          
+          
+          // Contact info in Black
+          local-contact("img/phone-icon.png", phone, "tel:" + phone),
+          local-contact("img/mail-icon.png", email, "mailto:" + email),
+          
+          // Socials in Brand Color
+          local-contact("img/linkedin.png", "LinkedIn", overview.linkedin, clr: blue.darken(20%)),
+          local-contact("img/github.png", "GitHub", overview.github, clr: blue.darken(20%)),
+          local-contact("img/cv.png", "CV", overview.cv, clr: blue.darken(20%)),
+        )
+      ]
     ),
     
     // Overview Content (Equivalent to {{ .Content }})
@@ -124,7 +145,64 @@
   ..my-skills.map(s => skill-item(s.at(0), s.at(1)))
 )
 
+// Helper for Compact Education entries
+#let edu-item(icon-path, school, degree, details: "") = {
+  grid(
+    columns: (16pt, 1fr),
+    column-gutter: 6pt,
+    align: top + left,
+    // Small icon for the institution
+    image(icon-path, width: 14pt),
+    stack(
+      dir: ttb,
+      spacing: 2pt,
+      // School Name (Small & Bold)
+      text(weight: "bold", size: 9pt)[#school],
+      // Degree (Accent Color)
+      text(size: 8.5pt, fill: rgb("#2d5a27"), weight: "medium")[#degree],
+      // Supporting details (Very small & Gray)
+      if details != "" { 
+        text(size: 7.5pt, fill: gray.darken(40%), style: "italic")[#details] 
+      }
+    )
+  )
+}
+
+#v(1em) // Gap from previous section
+== Education
+#line(length: 100%, stroke: 0.5pt)
+#v(0.2em)
+
+#grid(
+  columns: (1fr, 1.1fr, 1.2fr), // Adjusted widths to prevent text wrapping
+  column-gutter: 12pt,
+  
+  // Georgia Tech
+  edu-item(
+    "img/gatech.png",
+    "Georgia Tech",
+    "M.Sc. Computer Science",
+    details: "Specialization in AI"
+  ),
+  
+  // Queen's
+  edu-item(
+    "img/queens.jpg",
+    "Queen's University",
+    "M.A. Economics",
+    details: "Specialization in Econometrics"
+  ),
+  
+  // McMaster/Athabasca
+  edu-item(
+    "img/mcmaster.jpg",
+    "McMaster University",
+    "B.A. Economics",
+    details: "Minor in Mathematics and Statistics"
+  )
+)
+
 #v(1em)
 #text(size: 6pt, style: "italic", fill: gray)[
   Icons provided by Icons8, DevIcon, and Azure Icons.
-] 
+]
