@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Experiences on My New Hugo Site</title>
-    <link>https://example.org/experience/</link>
+    <link>https://collinbrown95.github.io/cv/experience/</link>
     <description>Recent content in Experiences on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jan 1970 00:00:04 +0000</lastBuildDate><atom:link href="https://example.org/experience/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Jan 1970 00:00:04 +0000</lastBuildDate><atom:link href="https://collinbrown95.github.io/cv/experience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sr. Data Architect / Technical Advisor</title>
-      <link>https://example.org/experience/data-platform-architect/</link>
+      <link>https://collinbrown95.github.io/cv/experience/data-platform-architect/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:04 +0000</pubDate>
       
-      <guid>https://example.org/experience/data-platform-architect/</guid>
+      <guid>https://collinbrown95.github.io/cv/experience/data-platform-architect/</guid>
       <description>Lead the development and oversight of our division&amp;rsquo;s domain-specific data lake and medallion architecture, managing data ingestion, validation, and processing pipelines while serving as a technical advisor on data engineering practices.</description>
     </item>
     
     <item>
       <title>Sr. Platform Developer</title>
-      <link>https://example.org/experience/data-platform-developer/</link>
+      <link>https://collinbrown95.github.io/cv/experience/data-platform-developer/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:03 +0000</pubDate>
       
-      <guid>https://example.org/experience/data-platform-developer/</guid>
+      <guid>https://collinbrown95.github.io/cv/experience/data-platform-developer/</guid>
       <description>Led multiple development efforts for a Kubernetes-native data analytics platform, implementing horizontal capabilities and advising on data mesh architecture.</description>
     </item>
     
     <item>
       <title>Data Engineer</title>
-      <link>https://example.org/experience/data-engineering-spec/</link>
+      <link>https://collinbrown95.github.io/cv/experience/data-engineering-spec/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:02 +0000</pubDate>
       
-      <guid>https://example.org/experience/data-engineering-spec/</guid>
+      <guid>https://collinbrown95.github.io/cv/experience/data-engineering-spec/</guid>
       <description>Led an 18-month redesign of a large data processing system for transportation statistics. Delivered the solution on time, under budget, and ensured a smooth transition to production.</description>
     </item>
     
     <item>
       <title>Jr. Data Scientist</title>
-      <link>https://example.org/experience/jr-data-scientist/</link>
+      <link>https://collinbrown95.github.io/cv/experience/jr-data-scientist/</link>
       <pubDate>Thu, 01 Jan 1970 00:00:01 +0000</pubDate>
       
-      <guid>https://example.org/experience/jr-data-scientist/</guid>
+      <guid>https://collinbrown95.github.io/cv/experience/jr-data-scientist/</guid>
       <description>Led Proof-of-Concept projects in data analytics and machine learning, delivering actionable insights and automation through small-scale internal tools and analysis outputs.</description>
     </item>
     

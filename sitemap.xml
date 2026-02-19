@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/</loc>
+    <loc>https://collinbrown95.github.io/cv/</loc>
     <lastmod>1970-01-01T00:00:04+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/experience/</loc>
+    <loc>https://collinbrown95.github.io/cv/experience/</loc>
     <lastmod>1970-01-01T00:00:04+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/experience/data-platform-architect/</loc>
+    <loc>https://collinbrown95.github.io/cv/experience/data-platform-architect/</loc>
     <lastmod>1970-01-01T00:00:04+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/experience/data-platform-developer/</loc>
+    <loc>https://collinbrown95.github.io/cv/experience/data-platform-developer/</loc>
     <lastmod>1970-01-01T00:00:03+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/experience/data-engineering-spec/</loc>
+    <loc>https://collinbrown95.github.io/cv/experience/data-engineering-spec/</loc>
     <lastmod>1970-01-01T00:00:02+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/experience/jr-data-scientist/</loc>
+    <loc>https://collinbrown95.github.io/cv/experience/jr-data-scientist/</loc>
     <lastmod>1970-01-01T00:00:01+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/publications/bitcoin-fees/</loc>
+    <loc>https://collinbrown95.github.io/cv/publications/bitcoin-fees/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://collinbrown95.github.io/cv/categories/</loc>
   </url><url>
-    <loc>https://example.org/publications/</loc>
+    <loc>https://collinbrown95.github.io/cv/publications/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://collinbrown95.github.io/cv/tags/</loc>
   </url>
 </urlset>
