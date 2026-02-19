@@ -17,10 +17,10 @@
   first_name: "Collin",
   last_name: "Brown",
   title: "Sr. Data Architect / Technical Advisor",
-  degrees: "M.Sc. Candidate, Computer Science • M.A. Economics",
+  degrees: "M.Sc. Candidate, Computer Science • M.A., Economics",
   linkedin: "https://www.linkedin.com/in/collin-brown-499a4580/",
   github: "https://github.com/Collinbrown95",
-  cv: "https://collinbrown95.github.io/resume/",
+  cv: "https://collinbrown95.github.io/cv/",
   profile_img: "img/collin-profile-pic-1.png" // Ensure this file exists in your folder
 )
 
