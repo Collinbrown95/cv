@@ -1,9 +1,50 @@
 name: "Alex Smith"
 email: "alex@example.com"
 jobs:
-  - title: "Senior Developer"
-    company: "Tech Corp"
-    date: "2021 - Present"
-    details:
-      - "Led the migration of 50+ microservices to Kubernetes."
-      - "Optimized database queries, reducing latency by 40%."
+  - title: Sr. Data Architect
+    company: Statistics Canada
+    date: 2024 - Present
+    details: Led the development and oversight of our division’s domain-specific data lake and medallion architecture, managing data ingestion, validation, and processing pipelines while serving as a technical advisor on data engineering practices.
+  - title: Sr. Platform Developer
+    company: Statistics Canada
+    date: 2022 - 2024
+    details: Led multiple development efforts for a Kubernetes-native data analytics platform, implementing horizontal capabilities and advising on data mesh architecture.
+  - title: "Data Engineer"
+    company: Statistics Canada
+    date: 2020 - 2022
+    details: Led an 18-month redesign of a large data processing system for transportation statistics. Delivered the solution on time, under budget, and ensured a smooth transition to production.
+  - title: "Jr. Data Scientist"
+    company: Employment and Social Development Canada 
+    date: 2018 - 2020
+    details: Led Proof-of-Concept projects in data analytics and machine learning, delivering actionable insights and automation through small-scale internal tools and analysis outputs.
+skills:
+  - - System Design
+    - img/system-design.png
+  - - Data Modelling
+    - img/data-modelling.png
+  - - Data Security
+    - img/data-security.png
+  - - Test Automation
+    - img/test-automation.png
+  - - Cloud Networking
+    - img/cloud-networking.png
+  - - Azure
+    - img/azure.png
+  - - GitLab
+    - img/gitlab.png
+  - - Databricks
+    - img/azure-databricks.png
+  - - Azure Synapse
+    - img/azure-synapse.png
+  - - Python
+    - img/python.png
+  - - SQL
+    - img/sql.png
+  - - Java
+    - img/java.png
+  - - Technical Communication
+    - img/tech-comms.png
+  - - Project Management
+    - img/project-management.png
+  - - Requirements Gathering
+    - img/requirements.png
