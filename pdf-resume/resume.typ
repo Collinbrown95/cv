@@ -1,3 +1,11 @@
+#import "@preview/dovenv:0.1.0": parse-env
+
+// Read and parse the .env file
+#let env = parse-env(read(".env"))
+
+#let phone = env.at("PHONE_NUM")
+#let email = env.at("EMAIL")
+
 // Load your data
 #let data = yaml("resume-data.yml")
 
@@ -52,7 +60,10 @@
         
         // Social Links (using text for simplicity, or FontAwesome icons)
         text(size: 9pt, fill: blue.darken(20%))[
-          #link(overview.linkedin)[LinkedIn] | #link(overview.github)[GitHub] | #link(overview.cv)[CV]
+          #link(overview.linkedin)[LinkedIn] | #link(overview.github)[GitHub] | #link(overview.cv)[CV] |
+        ],
+        text(size: 9pt, fill: black)[
+          #phone  #email
         ]
       )
     ),
