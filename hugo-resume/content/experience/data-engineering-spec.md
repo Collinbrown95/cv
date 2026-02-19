@@ -10,6 +10,6 @@ In this position, I was the primary Data Engineer on an 18-month cloud-native re
 
 - The system redesign was delivered on-time at a cost significantly lower than the next best alternative with all essential features met.
 
-- Accelerated monthly delivery by automating workflows and migrating legacy SAS and SQL scripts to the modern Python Data Science ecosystem, reducing end-to-end times of complex data processing programs.
+- Accelerated monthly delivery by automating workflows and migrating legacy SAS and SQL scripts to the modern Python Data Science ecosystem, reducing end-to-end running times of complex data processing programs.
 
 - Minimized total cost of ownership by replacing high-maintenance licensed software solutions with well-documented, maintainable open-source solutions.
