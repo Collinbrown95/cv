@@ -1,6 +1,6 @@
 baseURL = 'https://collinbrown95.github.io/cv'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Collin Brown CV'
 
 [markup]
   [markup.goldmark]
